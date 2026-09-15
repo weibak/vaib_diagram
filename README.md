@@ -33,3 +33,4 @@ python manage.py runserver
 
 ## Отображние диаграмы
 http://127.0.0.1:8000/chart/
+![img.png](img.png)

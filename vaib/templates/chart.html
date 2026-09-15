@@ -1,0 +1,95 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Marketing statistics</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/highcharts@12/highcharts.js"></script>
+    <link
+        rel="stylesheet"
+        href="{% static 'marketing-chart.css' %}"
+    >
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <div class="chart-card">
+
+        <div class="chart-header">
+
+            <div class="chart-header__title">
+                Marketing
+            </div>
+
+            <button
+                type="button"
+                class="chart-header__button"
+            >
+                ✎
+            </button>
+
+        </div>
+
+
+        <div class="chart-body">
+
+            <div class="chart-side-labels">
+
+                <div class="chart-side-label chart-side-label--tdy">
+                    Tdy
+                </div>
+
+                <div class="chart-side-label">
+                    0%
+                </div>
+
+                <div class="chart-side-label">
+                    $0
+                </div>
+
+                <div class="chart-side-label">
+                    $0
+                </div>
+
+                <div class="chart-side-label">
+                    0
+                </div>
+
+                <div class="chart-side-label">
+                    0
+                </div>
+
+                <div class="chart-side-label">
+                    —
+                </div>
+
+            </div>
+
+
+            <div class="chart-area">
+
+                <div id="marketing-chart"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="{% static 'marketing-chart.js' %}"></script>
+
+</body>
+</html>
